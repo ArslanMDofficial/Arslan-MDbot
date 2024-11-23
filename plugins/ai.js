@@ -1,22 +1,19 @@
 const config = require('../config')
 const {cmd , commands} = require('../command')
-const {sleep} = require('../lib/functions')
+const { fetchJson } = require('../lib/functions')
 
 cmd({
-    pattern: "restart",
-    alias: ["rebot","reboot"], 
-    react: "🐬",
-    desc: "restart the bot",
-    category: "owner",
+    pattern: "ai",
+    alias: ["gpt","bot"], 
+    react: "📑",
+    desc: "ai chat.",
+    category: "main",
     filename: __filename
 },
 async(conn, mek, m,{from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
 try{
-if (!isOwner) return;
-const {exec} = require("child_process")
-reply("restarting...")
-await sleep(1500)
-exec("pm2 restart all")
+let data = await fetchJson(`https://chatgptforprabath-md.vercel.app/api/gptv1?q=${q}`)
+return reply(`${data.data}`)
 }catch(e){
 console.log(e)
 reply(`${e}`)
