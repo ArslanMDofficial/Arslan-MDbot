@@ -1,4 +1,4 @@
-FROM quay.io/mrarslanmd/arslanmd
+FROM quay.io/mrarslanmd/arslan-md
 RUN git clone https://github.com/Arslan-MD-Official/Arslan-Md /root/Arslan-MD-Official
 WORKDIR /root/Arslan-MD-Official
 RUN npm install npm@latest
