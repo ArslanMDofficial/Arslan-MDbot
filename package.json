@@ -1,12 +1,12 @@
 {
-  "name": "ArslanMd",
+  "name": "SILENT-SOBX-MD",
   "version": "1.0.0",
   "description": "A WhatsApp bot created using Node.js",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name Arslan-Md",
-    "stop": "pm2 stop Arslan-Md",
-    "restart": "pm2 restart Arslan-Md"
+    "start": "pm2 start index.js --deep-monitoring --attach --name SILENT-SOBX-MD",
+    "stop": "pm2 stop SILENT-SOBX-MD",
+    "restart": "pm2 restart SILENT-SOBX-MD"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "6.7.9",
@@ -26,7 +26,6 @@
     "pixaldrain-sinhalasub": "git+https://github.com/DarkMakerofc/pixaldrain-sinhalasub.git",
     "translate-google-api": "^1.0.4",
     "google-tts-api": "^2.0.2",
-    "punycode.js": "2.3.1", 
     "ruhend-scraper" : "8.0.3",
     "buffer" : "6.0.3",
     "android-versions": "2.0.0",
@@ -79,4 +78,4 @@
     "stream" : "0.0.3",
     "body-parser": "^1.20.3"
   }
-  }
+}
