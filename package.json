@@ -25,5 +25,16 @@
     "qrcode-terminal": "^0.12.0",
     "yt-search":"2.12.1",
     "api-dylux":"1.8.5"
+    "express": "^4.17.1",
+    "whatsapp-web.js": "^1.4.1",
+    "twilio": "^3.70.0",
+    "wa-sticker-formatter": "4.4.4",
+    "cheerio": "1.0.0",
+    "phone" : "3.1.30",
+    "jimp": "^0.16.1",
+    "stream" : "0.0.3",
+    "body-parser": "^1.20.3",
+    "ytdl-core": "4.11.5",
+    "ytsearch-venom": "1.0.0",
   }
 }
